@@ -1,8 +1,9 @@
 import React from "react";
 import "./Navbar.css";
-import cart from './assets/cart.png'; // Import your downloaded image
+import cart from "./assets/cart.png"; // Import your downloaded image
 // import location from './assets/location_icon.png'
-import search from './assets/search.png'
+import search from "./assets/search.png";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -31,21 +32,17 @@ const Navbar = () => {
           </a>
         </div>
         <div className="login">
-          <a href="/" className="cat">
-            Login
-          </a>
+          <NavLink to="/signin">Login</NavLink>
         </div>
         <div className="cart">
           <a href="/">
             <img src={cart} alt="your cart" />
           </a>
-       
-        <div className="MyCart">
-        <a href="/">
-            MyCart
-          </a>
+
+          <div className="MyCart">
+            <a href="/">MyCart</a>
           </div>
-          </div>
+        </div>
       </nav>
     </>
   );
