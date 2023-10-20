@@ -6,7 +6,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [password, setPassword] = useState("");
-//   const [confirmPassword, setConfirmPassword] = useState("");
+  //   const [confirmPassword, setConfirmPassword] = useState("");
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -87,7 +87,9 @@ const Login = () => {
           </span>
         </label> */}
 
-        <button className={classes.submit}>Log In</button>
+        <div className={classes.submitContainer}>
+          <button className={classes.submit}>Submit</button>
+        </div>
         <p className={classes.signin}>
           Create your account. <NavLink to="/signup">Sign Up</NavLink>
         </p>

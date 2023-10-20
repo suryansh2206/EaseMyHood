@@ -87,7 +87,9 @@ const Register = () => {
           </span>
         </label>
 
-        <button className={classes.submit}>Submit</button>
+        <div className={classes.submitContainer}>
+          <button className={classes.submit}>Submit</button>
+        </div>
         <p className={classes.signin}>
           Already have an account? <NavLink to="/signin">Sign In</NavLink>
         </p>
