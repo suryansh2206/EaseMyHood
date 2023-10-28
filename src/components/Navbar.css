@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
 }
 
@@ -12,14 +12,15 @@
 }
 
 .logo {
-  color: rgb(5, 161, 5);
-  padding: 5px 40px ;
+  color: rgb(5, 77, 128);
+  padding: 5px 40px;
+  font-weight: bolder;
+  font-size: larger;
 }
 
 a img {
   width: 30px;
 }
-
 
 .location {
   margin: 0px 20px 0px 30px;
@@ -28,11 +29,24 @@ a img {
 .categories {
   margin: 6px 0px 0px 150px;
   border-radius: 10px;
-  background-color: rgb(5, 161, 5);
+  background-color: rgb(5, 77, 128);
   padding: 7px 10px 10px 10px;
   border-top-right-radius: 0%;
   border-bottom-right-radius: 0%;
+  display: flex;
+  flex-direction: column;
 }
+.cat{
+  font-size: small;
+}
+
+.shopby {
+  /* margin: 6px 0px 0px 150px; */
+  /* margin: 5px; */
+  margin-top: -5%;
+  font-size:x-small;
+}
+
 select {
   border: none;
 }
@@ -54,7 +68,8 @@ select {
 
 input {
   font-size: 24px;
-  border: 2px solid rgb(5, 161, 5);
+  font-weight:100;
+  border: 2px solid rgb(5, 77, 128);
   border-radius: 10px;
   margin-top: 6px;
   border-top-left-radius: 0%;
@@ -64,11 +79,12 @@ input {
 
 .login {
   margin: 7px 200px 0px 150px;
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 100;
 }
 
-.login a{
-  color:black;
+.login a {
+  color: black;
 }
 .cart {
   border-radius: 10px;
@@ -79,11 +95,41 @@ input {
 .cart img {
   width: 30px;
 }
-.MyCart a{
-  color:black;
+.MyCart a {
+  color: black;
 }
 
 a {
   text-decoration: none;
-  color:white;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .logo {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .location,
+  .categories,
+  .search,
+  .login,
+  .cart {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .searchBtn {
+    position: static;
+  }
 }

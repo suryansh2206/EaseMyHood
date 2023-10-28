@@ -10,7 +10,7 @@ const Navbar = () => {
     <>
       <nav className="main-nav">
         <div className="logo">
-          <h2>EaseMyHood</h2>
+          <h2>easemyhood</h2>
         </div>
         <div className="location">
           <h2>Location</h2>
@@ -21,8 +21,11 @@ const Navbar = () => {
           </select>
         </div>
         <div className="categories">
+          <a href="/" className="shopby">
+            Shop by
+          </a>
           <a href="/" className="cat">
-            Categories
+            Category
           </a>
         </div>
         <div className="search">
